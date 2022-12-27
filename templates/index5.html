@@ -40,7 +40,7 @@
     <ul class="nav nav-tabs">
         <li role="presentation" class="active"><a href="{{redirect_url}}/anotherpage">Home</a></li>
         <li role="presentation"><a href="#">Profile</a></li>
-        <li role="presentation"><a href="#">Messages</a></li>
+        <li role="presentation"><a href="message">Messages</a></li>
         <li role="presentation"><a href="service">Service</a></li>
 
         <li role="presentation">
@@ -49,11 +49,18 @@
               </svg></a>
         </li>
     </ul>
+    
+    <div class="search-box">
+        <h3>
+            <input class="search" id="product_search"  placeholder="product" class="form-control" type="text" onkeyup="enterkey_search();">
+            <button onclick="search()">search</button>
+        </h3>
+    </div>
 
     <div>
         <h2>location: Seoul</h2>
-        <h2>Number: 010 2433 2236</h2>
-        <h2>Name: JucCheol Jeong</h2>
+        <h2>Number: 010 xxxx xxxx</h2>
+        <h2>Name: xxxxxx Jeong</h2>
     </div>
 
 

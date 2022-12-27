@@ -2,6 +2,12 @@
     font-family: 'Gowun Dodum', sans-serif;
 }
 
+.search-box {
+    width: 70%;
+    height: 36px;
+    margin: 0 auto;
+}
+
 .search {
     width: 50%;
     height: 30px;
@@ -10,19 +16,14 @@
     justify-content: center;
 }
 
-.search-box {
-    width: fit-content;
-    height: 36px;
-    margin: 0 auto;
-}
 
 .search-box input {
-    width: 300px;
+    width: 60%;
     height: 30px;
 }
 
 .search-box button {
-    width: 100px;
+    width: fit-content;
     height: 30px;
 }
 
@@ -84,11 +85,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    margin: auto;
     margin-top: 20px;
+    
 }
 
 .mybtns>button {
     margin-right: 10px;
 }
-

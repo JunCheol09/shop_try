@@ -34,6 +34,7 @@ def Puma_get():
     return render_template('index7.html')
 
 
+
 @app.route(f'/{x}', methods=["GET"])
 def x_get():
     data = ''
@@ -84,6 +85,10 @@ def account_post():
 @app.route("/mycart", methods=["GET"])
 def mycart_get():
     return render_template('index4.html')
+
+@app.route("/message", methods=["GET"])
+def message_get():
+    return render_template('index8.html')
 
 @app.route("/service", methods=["GET"])
 def service_get():

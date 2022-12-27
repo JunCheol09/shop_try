@@ -40,7 +40,7 @@
     <ul class="nav nav-tabs">
         <li role="presentation" class="active"><a href="{{redirect_url}}/anotherpage">Home</a></li>
         <li role="presentation"><a href="#">Profile</a></li>
-        <li role="presentation"><a href="#">Messages</a></li>
+        <li role="presentation"><a href="message">Messages</a></li>
         <li role="presentation"><a href="service">Service</a></li>
 
         <li role="presentation">
@@ -54,9 +54,9 @@
 
 
     <div class="search-box">
-        <h3>Product
-            <input class="search" id="product_search" class="form-control" type="text" onkeyup="enterkey_search();">
-            <button>search</button>
+        <h3>
+            <input class="search" id="product_search"  placeholder="product" class="form-control" type="text" onkeyup="enterkey_search();">
+            <button onclick="search()">search</button>
         </h3>
     </div>
 

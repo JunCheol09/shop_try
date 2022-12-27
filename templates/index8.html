@@ -25,15 +25,38 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-    <title>Shoes shoppingmal_login</title>
+    <title>신발 홈쇼핑몰</title>
 
     <!-- CSS -->
     <link href="{{ url_for('static', filename='css/style2.css') }}" rel="stylesheet">
     <!-- JS -->
-    <script src="{{ url_for('static', filename='js/main3.js') }}" > </script>
+    <script src="{{ url_for('static', filename='js/main2.js') }}"> </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
-    
+
+    <style>
+        
+        .form-floating {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .form-floating>button {
+            margin-top: 10px;
+            width: 100px;
+        }
+
+        #floatingTextarea2 {
+            height: 200px;
+            width: 60%;
+            margin-top: 50px;
+        }
+
+
+    </style>
 </head>
 
 <body>
@@ -44,12 +67,13 @@
         <li role="presentation"><a href="service">Service</a></li>
 
         <li role="presentation">
-            <a href="mycart"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-              </svg></a>
+            <a href="mycart"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-cart" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg></a>
         </li>
     </ul>
-
 
     <div class="search-box">
         <h3>
@@ -58,34 +82,12 @@
         </h3>
     </div>
 
+    <div class="form-floating">
+        <textarea class='first' class="form-control" placeholder="message" id="floatingTextarea2"
+             ></textarea>
+ 
 
-    <div class="mytitle">
-
-        <h1> Nike Shoes Shoppingmal</h1>
-        <button onclick="open_box()">Sign in</button>
-    </div>
-
-
-    <div class="mypost" id="post-box">
-    
-        <div class="mybtns">
-            <button
-                onclick=logout() type="button" class="btn btn-dark">log out</button>
-            <button onclick="close_box()" type="button" class="btn btn-outline-dark">close</button>
-
-        </div>
-    </div>
-
-        
-    <div class="mycards" id="Nike">
-        <div class="mycards" id="Puma">
-            <div style="display:flex;  justify-content: space-between;">
-                <h1>Nike</h1>
-                <h3 type="button"><a href="">more</a></h3>
-            </div>
-        <div class="row row-cols-1 row-cols-md-4 g-4" id="cards-box">
-        </div>
-        
+        <button type="button" class="btn btn-dark">Send</button>
     </div>
 </body>
 
